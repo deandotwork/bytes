@@ -25,11 +25,16 @@ func problem1() {
 }
 
 func problem4() {
+	// first marker
 	const Line1 = 1.00
+	// second marker
 	line2 := 12.67
+	distanceMeters := line2 - Line1
+	if distanceMeters < 10.00 {
+		fmt.Println("Unable to proceed, distance out of scope")
+	}
 	var car1 = 1.4579
 	//d = st
-	distanceMeters := line2 - Line1
 	fmt.Println("Distance in Meters", distanceMeters)
 	testSpeed := distanceMeters / car1
 	fmt.Println("Test Speed in m/s", testSpeed)
